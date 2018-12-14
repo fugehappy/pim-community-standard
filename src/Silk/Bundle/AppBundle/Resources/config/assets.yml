@@ -1,0 +1,3 @@
+css:
+    style:
+        - bundles/silkapp/less/style.less

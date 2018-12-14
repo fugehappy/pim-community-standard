@@ -1,0 +1,44 @@
+{% import 'PimUIBundle:Default:page_elements.html.twig' as elements %}
+
+<div class="AknDefault-mainContent">
+    123
+</div>
+<script>
+    require(
+        [
+            'pim/common/breadcrumbs',
+            'pim/fetcher-registry',
+            'pim/form-builder',
+            'silkui/custom'
+        ],
+        function(
+            Breadcrumbs,
+            FetcherRegistry,
+            FormBuilder
+        ) {
+            $(function() {
+                var breadcrumbs = new Breadcrumbs({
+                    config: {
+                        tab: 'pim-menu-activity',
+                        item: 'pim-menu-activity-dashboard'
+                    }
+                });
+                breadcrumbs.configure().then(function () {
+                    breadcrumbs.render();
+                    $('*[data-drop-zone="breadcrumbs"]').append(breadcrumbs.$el);
+                });
+
+                FetcherRegistry.initialize().done(function () {
+                    console.log(245);
+                    FormBuilder.build('silk-custom-index').then(function (form) {
+
+                        console.log(123);
+                        $('.user-menu').append(form.el);
+                        form.render();
+                    }.bind(this));
+                });
+            });
+        }
+    );
+</script>
+

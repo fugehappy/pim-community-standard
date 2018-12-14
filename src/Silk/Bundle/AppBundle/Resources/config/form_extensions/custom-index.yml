@@ -1,0 +1,54 @@
+extensions:
+    silk-custom-index:
+      module: pim/common/simple-view
+      config:
+          template: pim/template/common/default-template
+
+    silk-custom-index-grid-container:
+        module: pim/common/simple-view
+        parent: silk-custom-index
+        targetZone: content
+        config:
+            template: pim/template/form/index/index
+
+    silk-custom-index-user-navigation:
+        module: pim/menu/user-navigation
+        parent: silk-custom-index
+        targetZone: user-menu
+        config:
+            userAccount: pim_menu.user.user_account
+            logout: pim_menu.user.logout
+
+    silk-custom-index-grid-title:
+        module: pim/common/grid-title
+        parent: silk-custom-index
+        targetZone: title
+        config:
+            title: 'Custom Title'
+            countable: false
+
+    silk-custom-index-breadcrumbs:
+        module: pim/common/breadcrumbs
+        parent: silk-custom-index
+        targetZone: breadcrumbs
+        config:
+            tab: pim-menu-activity
+            item: silk-menu-custom
+
+    silk-custom-index-filters-list:
+        module: silk/group/timepicker
+        parent: silk-custom-index-grid-container
+        targetZone: filters
+
+    silk-custom-index-filters-manage:
+        module: oro/datafilter/filters-button
+        parent: silk-custom-index-grid-container
+        targetZone: filters
+
+    silk-custom-process-index-grid:
+        module: pim/form/common/index/grid
+        parent: silk-custom-index-grid-container
+        position: 1000
+        config:
+            alias: job-tracker-grid
+

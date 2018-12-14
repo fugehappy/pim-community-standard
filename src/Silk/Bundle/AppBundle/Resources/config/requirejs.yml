@@ -1,0 +1,11 @@
+config:
+    paths:
+        silk/custom: silkapp/js/controller/custom
+        silk/group/timepicker: silkapp/js/datafilter/filters-list
+
+    config:
+        pim/controller-registry:
+            controllers:
+                silk_custom_index:
+                    module: silk/custom
+

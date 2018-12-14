@@ -1,0 +1,2 @@
+silk_app:
+    resource: "@SilkAppBundle/Resources/config/routing.yml"

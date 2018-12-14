@@ -1,0 +1,8 @@
+extensions:
+    silk-menu-custom:
+        module: pim/menu/item
+        parent: pim-menu-activity-navigation-block
+        position: 500
+        config:
+            title: 'Custom'
+            to: silk_custom_index
