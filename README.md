@@ -1,3 +1,6 @@
+### Akeneo PIM
+
+```directory
 |-- akeneo_lib
     |-- composer.json
     |-- package.json
@@ -38,3 +41,4 @@
         |-- app.php
         |-- app_dev.php
         |-- favicon.ico
+```
