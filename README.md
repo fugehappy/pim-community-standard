@@ -2,11 +2,11 @@
 
 ```directory
 |-- pim-community-standard
-    |-- app
+    |-- app // application config
     |   |-- AppKernel.php
     |   |-- config
     |       |-- routing.yml
-    |-- bin // rovide some commands
+    |-- bin // provide some commands
     |-- src
     |   |-- Silk
     |       |-- Bundle
