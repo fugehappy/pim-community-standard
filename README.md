@@ -1,20 +1,17 @@
 ### Akeneo PIM
 
 ```directory
-|-- akeneo_lib
-    |-- composer.json
-    |-- package.json
+|-- pim-community-standard
     |-- app
     |   |-- AppKernel.php
     |   |-- config
     |       |-- routing.yml
-    |-- bin
+    |-- bin // rovide some commands
     |-- src
     |   |-- Silk
     |       |-- Bundle
     |           |-- AppBundle
     |               |-- SilkAppBundle.php
-    |               |-- directoryList.md
     |               |-- DependencyInjection
     |               |   |-- SilkAppExtension.php
     |               |-- Resources
@@ -33,12 +30,19 @@
     |                   |   |       |-- filters-list.js
     |                   |   |-- less
     |                   |       |-- style.less
+    |                   |   |-- lib
+    |                   |   |-- templates // html
+    |                   |-- translations
+    |                   |       |-- jsmessages.en.yml
+    |                   |       |-- messages.en.yml
     |                   |-- views
     |                       |-- Custom
     |                           |-- index.html.twig
-    |-- var
-    |-- web
+    |-- var  // log cache
+    |-- web  // website entry
         |-- app.php
         |-- app_dev.php
         |-- favicon.ico
+    |-- composer.json
+    |-- package.json
 ```
