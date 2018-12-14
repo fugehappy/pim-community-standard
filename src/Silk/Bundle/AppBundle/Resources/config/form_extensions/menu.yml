@@ -4,5 +4,5 @@ extensions:
         parent: pim-menu-activity-navigation-block
         position: 500
         config:
-            title: 'Custom'
+            title: page_title.silk_custom_index_title
             to: silk_custom_index

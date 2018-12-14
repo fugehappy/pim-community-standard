@@ -20,7 +20,7 @@
                 var breadcrumbs = new Breadcrumbs({
                     config: {
                         tab: 'pim-menu-activity',
-                        item: 'pim-menu-activity-dashboard'
+                        item: 'silk-menu-custom'
                     }
                 });
                 breadcrumbs.configure().then(function () {
@@ -29,10 +29,7 @@
                 });
 
                 FetcherRegistry.initialize().done(function () {
-                    console.log(245);
                     FormBuilder.build('silk-custom-index').then(function (form) {
-
-                        console.log(123);
                         $('.user-menu').append(form.el);
                         form.render();
                     }.bind(this));
