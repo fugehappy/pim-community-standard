@@ -4,5 +4,41 @@ extensions:
         parent: pim-menu-activity-navigation-block
         position: 500
         config:
-            title: page_title.silk_custom_index_title
+            title: page_nav.silk_custom_nav
             to: silk_custom_index
+
+    # news
+    silk-menu-news:
+        module: pim/menu/tab
+        parent: pim-menu
+        position: 100
+        targetZone: mainMenu
+        config:
+            title: 'News'
+            iconModifier: iconCard
+            to: silk_news
+
+    # silk-menu-news-column:
+    #     module: pim/menu/column
+    #     parent: pim-menu
+    #     position: 500
+    #     targetZone: column
+    #     config:
+    #         stateCode: silk-menu-news
+    #         tab: silk-menu-news
+    #         navigationTitle: pim_menu.navigation.activity
+
+    # silk-menu-news-navigation-block:
+    #     module: pim/menu/navigation-block
+    #     parent: silk-menu-news-column
+    #     targetZone: navigation
+    #     config:
+    #         title: pim_menu.navigation.activity
+
+    # silk-menu-news-dashboard:
+    #     module: pim/menu/item
+    #     parent: silk-menu-news-navigation-block
+    #     position: 100
+    #     config:
+    #         title: pim_menu.item.dashboard
+    #         to: silk_news

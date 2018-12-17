@@ -1,2 +1,4 @@
 page_title:
-    silk_custom_index_title: Custom Title
+    silk_custom_index_title: Custom Page Title
+page_nav:
+    silk_custom_nav: Custom Page Nav

@@ -1,8 +1,7 @@
-# silk_custom:
-#     resource: '@SilkUIBundle/Resources/config/routing/silk_custom.yml'
-#     prefix: /custom
-#     defaults: { _controller: FrameworkBundle:Template:template, template: SilkUIBundle:Custom:index.html.twig }
+silk_news:
+    path: /news
+    defaults: { _controller: FrameworkBundle:Template:template, template: SilkAppBundle:News:index.html.twig }
 
 silk_custom_index:
-    path: /custom/
+    path: /silk/custom
 

@@ -24,7 +24,7 @@ extensions:
         parent: silk-custom-index
         targetZone: title
         config:
-            title: 'Custom Title'
+            title: page_title.silk_custom_index_title
             countable: false
 
     silk-custom-index-breadcrumbs:
