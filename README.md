@@ -1,5 +1,8 @@
 ### Akeneo PIM
 
+nav config
+
+
 ```directory
 |-- pim-community-standard
     |-- app // application config
@@ -36,7 +39,7 @@
     |                   |       |-- jsmessages.en.yml
     |                   |       |-- messages.en.yml
     |                   |-- views
-    |                       |-- Custom
+    |                       |-- News
     |                           |-- index.html.twig
     |-- var  // log cache
     |-- web  // website entry
